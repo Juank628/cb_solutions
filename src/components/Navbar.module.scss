@@ -45,14 +45,15 @@ $logoAreaWidth: 30%;
 }
 
 .menuRow {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 44px;
-    
-    a, li {
-        color: white;
-    }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 44px;
+
+  a,
+  li {
+    color: white;
+  }
 }
 
 @media (min-width: $desktop-size) {
