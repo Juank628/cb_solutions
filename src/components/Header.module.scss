@@ -1,0 +1,75 @@
+@import '../assets/styles/global_variables.scss';
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/img/factory_night_1.jpg);
+    background-size: cover;
+
+    h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: $tablet-size) {
+  .header {
+    height: 400px;
+  }
+}
+
+@media (min-width: $laptop-size) {
+  .header {
+    height: 500px;
+    background-image: url(../assets/img/factory_night_2.jpg);
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .header {
+    height: 500px;
+    background-image: url(../assets/img/factory_night_2.jpg);
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: $extra-size) {
+  .header {
+    height: 600px;
+    background-image: url(../assets/img/industrial_bg_1.jpg);
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

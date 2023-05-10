@@ -56,7 +56,7 @@ $logoAreaWidth: 30%;
   }
 }
 
-@media (min-width: $desktop-size) {
+@media (min-width: $laptop-size) {
   .mobileMenu {
     display: none;
   }
