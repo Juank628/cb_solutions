@@ -1,0 +1,15 @@
+.sectionTitle {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.servicesContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}

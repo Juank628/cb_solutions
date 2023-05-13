@@ -1,0 +1,33 @@
+@mixin card-shape {
+  border-radius: 20px;
+  width: 336px;
+  height: calc(0.75 * 336px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include card-shape;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: brightness(60%);
+  @include card-shape;
+
+  img {
+    width: 20%;
+  }
+
+  p {
+    font-size: 22px;
+    color: white;
+  }
+}
