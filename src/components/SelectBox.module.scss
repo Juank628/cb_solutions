@@ -1,33 +1,33 @@
 .container {
-    border: 1px solid lightgray;
+  border: 1px solid lightgray;
 }
 
 .service {
-    padding: 10px;
-    border-bottom: 1px solid lightgray;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
 
-    h3 {
-        color: gray;
-        margin-top: 5px;
-    }
-    
-    p {
-        color: gray;
-        font-size: 0.9rem;
-        margin-bottom: 20px;
-    }
-    
-    img {
-        width: 100%;
-    }
+  h3 {
+    color: gray;
+    margin-top: 5px;
+  }
+
+  p {
+    color: gray;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 .serviceLink {
-    background-color: white;
-    border: 0;
-    border-bottom: 1px solid lightgray;
-    height: 40px;
-    width: 100%;
-    text-align: start;
-    color: gray;
+  background-color: white;
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+  width: 100%;
+  text-align: start;
+  color: gray;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from './SelectBox.module.scss';
 
 export default function SelectBox({ items = [] }) {
@@ -25,3 +26,11 @@ export default function SelectBox({ items = [] }) {
     </div>
   );
 }
+
+SelectBox.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+  })).isRequired,
+};
