@@ -1,3 +1,5 @@
+@import '../assets/styles/global_variables.scss';
+
 .container {
   border: 1px solid lightgray;
 }
@@ -14,6 +16,7 @@
   p {
     color: gray;
     font-size: 0.9rem;
+    line-height: 1.5rem;
     margin-bottom: 20px;
   }
 
@@ -22,7 +25,7 @@
   }
 }
 
-.serviceLink {
+.serviceLinkMobile {
   background-color: white;
   border: 0;
   border-bottom: 1px solid lightgray;
@@ -30,4 +33,59 @@
   width: 100%;
   text-align: start;
   color: gray;
+  cursor: pointer;
+}
+
+.sideBar {
+  display: none;
+}
+
+@media screen and (min-width: $tablet-size) {
+  .container {
+    display: flex;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    img {
+      width: 30%;
+    }
+  }
+
+  .serviceLinkMobile {
+    display: none;
+  }
+
+  .serviceLinkDesktop {
+    background-color: white;
+    border: 0;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    width: 20ch;
+    padding: 20px;
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: gray;
+    cursor: pointer;
+  }
+
+  .sideBar {
+    display: block;
+  }
+
+  .info {
+    width: 70%;
+  }
 }

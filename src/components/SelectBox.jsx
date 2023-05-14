@@ -11,13 +11,20 @@ export default function SelectBox({ items = [] }) {
 
   return (
     <div className={styles.container}>
+      <div className={styles.sideBar}>
+        {items.map((item) => (
+          <button key={item.id} type="button" name={item.name} onClick={selectItem} className={styles.serviceLinkDesktop}>{item.name}</button>
+        ))}
+      </div>
       {items.map((item) => (
         <div key={item.name}>
-          <button type="button" name={item.name} onClick={selectItem} className={styles.serviceLink}>{item.name}</button>
+          <button type="button" name={item.name} onClick={selectItem} className={styles.serviceLinkMobile}>{item.name}</button>
           {selectedItem === item.name ? (
             <div className={styles.service}>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <div className={styles.info}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
               <img src={item.image} alt="" />
             </div>
           ) : null}
