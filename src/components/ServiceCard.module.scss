@@ -10,6 +10,7 @@
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
+
   @include card-shape;
 }
 
@@ -20,6 +21,7 @@
   align-items: center;
   gap: 20px;
   backdrop-filter: brightness(60%);
+
   @include card-shape;
 
   img {
