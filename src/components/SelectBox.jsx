@@ -25,7 +25,9 @@ export default function SelectBox({ items = [] }) {
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
-              <img src={item.image} alt="" />
+              <div className={styles.photo}>
+                <img src={item.image} alt="" />
+              </div>
             </div>
           ) : null}
         </div>
