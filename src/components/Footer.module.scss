@@ -59,18 +59,18 @@
 }
 
 @media screen and (min-width: $laptop-size) {
-   .container {
+  .container {
     flex-direction: row;
-   }
-   
-   .contact {
+  }
+
+  .contact {
     justify-content: end;
     gap: 80px;
-   }
+  }
 }
 
 @media screen and (min-width: $extra-size) {
-    .container {
-        padding: 40px 200px;
-    }
+  .container {
+    padding: 40px 200px;
+  }
 }
