@@ -10,9 +10,10 @@ import styles from './Home.module.scss';
 
 export default function Home() {
   return (
-    <>
+    <main className={styles.container}>
       <Header />
       <h2 className={styles.sectionTitle}>Servicios</h2>
+      <hr className={styles.titleLine} />
       <div className={styles.servicesContainer}>
         <ServiceCard title="Instrumentación" icon={instrumentIcon} bgImage={electricBg} />
         <ServiceCard title="Control" icon={controlIcon} bgImage={electricBg} />
@@ -20,9 +21,10 @@ export default function Home() {
       </div>
 
       <h2 className={styles.sectionTitle}>Servicios Destacados</h2>
+      <hr className={styles.titleLine} />
       <div className={styles.featuredContainer}>
         <Featured />
       </div>
-    </>
+    </main>
   );
 }
