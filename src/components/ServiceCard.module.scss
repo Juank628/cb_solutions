@@ -1,6 +1,5 @@
 @mixin card-shape {
-  border-radius: 20px;
-  width: 336px;
+  border-radius: 10px;
   height: calc(0.75 * 336px);
 }
 
@@ -21,6 +20,7 @@
   align-items: center;
   gap: 20px;
   backdrop-filter: brightness(60%);
+  width: 100%;
 
   @include card-shape;
 

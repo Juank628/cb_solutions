@@ -7,13 +7,16 @@
 }
 
 .servicesContainer {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
   gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .featuredContainer {
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
