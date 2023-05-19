@@ -6,7 +6,7 @@ export default function Featured() {
   const services = [
     {
       id: 1,
-      name: 'Programación',
+      name: 'Control',
       title: 'Desarrollo de lógica de control de bombas Geho',
       description: 'Programación de 10 bombas de desplazamiento positivo para la decarga de 4 espesadores de relaves. Se desarrolló el progrma en el PLC de cada bomba y en el DCS para la integración con el proceso.',
       image: tempImg,
