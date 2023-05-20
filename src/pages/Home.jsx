@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import ServiceCard from '../components/ServiceCard';
 import Featured from '../components/Featured';
+import Customers from '../components/Customers';
 import electricBg from '../assets/img/electric_bg_4_3.jpg';
 import electricIcon from '../assets/img/electric_icon.png';
 import instrumentIcon from '../assets/img/instrument_icon.png';
@@ -50,6 +51,13 @@ export default function Home() {
       <div className={styles.featuredContainer}>
         <Featured />
       </div>
+
+      <h2 className={styles.sectionTitle}>Clientes</h2>
+      <hr className={styles.titleLine} />
+      <div className={styles.featuredContainer}>
+        <Customers />
+      </div>
+
     </main>
   );
 }
