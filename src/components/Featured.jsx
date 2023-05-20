@@ -7,8 +7,8 @@ export default function Featured() {
     {
       id: 1,
       name: 'Control',
-      title: 'Desarrollo de lógica de control de bombas Geho',
-      description: 'Programación de 10 bombas de desplazamiento positivo para la decarga de 4 espesadores de relaves. Se desarrolló el progrma en el PLC de cada bomba y en el DCS para la integración con el proceso.',
+      title: 'Integración de bombas Geho a DCS de planta',
+      description: 'La integración de equipos de terceros en el sistema de control de planta, es un reto que debe ser abordado correctamente para evitar problemas durante la operación. \n \n En este servicio, una reconocida empresa minera nos solicitó integrar 10 bombas de desplazamiento positivo al DCS de planta. Cada bomba contaba con su propio PLC, y el trabajo consistió en adaptar la lógica de cada PLC y desarrollar la programación en el DCS para que la operación se realice desde sala de control, considerando toda la información requerida para la operación. \n \n Además de las variables básicas requeridas por el operador como arranque, parada y estado de la bomba, fue muy útil la integración de las alarmas y el desarrollo de la lógica de causa de detención, que pemite al operador conocer la causa de cada parada para ser atendida rápidamente',
       image: tempImg,
     },
     {
