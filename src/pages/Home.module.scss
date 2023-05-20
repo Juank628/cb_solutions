@@ -1,9 +1,30 @@
+@import '../assets/styles/global_variables.scss';
+
 .sectionTitle {
   text-align: center;
-  margin: 0;
+  margin: 50px 0 0 0;
   padding: 5px;
-  background-color: gray;
-  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  color: black;
+}
+
+.titleLine {
+  margin-bottom: 25px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+.aboutContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.aboutForLargeScreens {
+  display: none;
 }
 
 .servicesContainer {
@@ -19,4 +40,34 @@
   padding: 20px;
   max-width: 1200px;
   margin: auto;
+}
+
+@media screen and (min-width: $tablet-size) {
+  .sectionTitle {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: $laptop-size) {
+  .aboutContainer {
+    line-height: 2;
+  }
+
+  .aboutForLargeScreens {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $extra-size) {
+  .aboutContainer {
+    line-height: 2.5;
+  }
+
+  .sectionTitle {
+    margin-top: 100px;
+  }
+
+  .titleLine {
+    margin-bottom: 50px;
+  }
 }
